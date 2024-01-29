@@ -43,9 +43,6 @@ jobs:
     
       - name: Docker build and tag
         run: |
-          #  docker build -t karthickmuppilirajan/dockertag:${{ github.run_number }} -t karthickmuppilirajan/dockertag:pr${{ steps.extract_pr_number.outputs.pr_number }} .
-          #  docker push karthickmuppilirajan/dockertag:${{ github.run_number }}
-          #  docker push karthickmuppilirajan/dockertag:pr${{ steps.extract_pr_number.outputs.pr_number }}
           docker build -t karthickmuppilirajan/dockertag:${{github.run_number}} .
           docker push karthickmuppilirajan/dockertag:${{ github.run_number}}
        

@@ -1,0 +1,18 @@
+{
+  "name": "qbfrontend",
+  "version": "1.0.0",
+  "description": "Continuous Deployment with GitHub Actions, DockerHub, and AWS EC2 tutorial for beginners",
+  "scripts": {
+    "start:dev": "node app.js",
+    "prepare": "husky",
+    "commitlint": "commitlint --edit"
+  },
+  "dependencies": {
+    "express": "*"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.6.0",
+    "@commitlint/config-conventional": "^18.6.0",
+    "husky": "^9.0.6"
+  }
+}

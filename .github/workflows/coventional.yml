@@ -40,10 +40,6 @@ jobs:
         with:
              username: ${{ secrets.DOCKERHUB_USERNAME }}
              password: ${{ secrets.DOCKERHUB_TOKEN }}
-      
-      # - name: Extract PR number
-      #   id: extract_pr_number
-      #   run: echo "::set-output name=pr_number::$(echo $GITHUB_REF | awk -F/ '{print $3}')"
     
       - name: Docker build and tag
         run: |
